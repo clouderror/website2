@@ -55,7 +55,7 @@ d {
 
 /* Wrapper header (komt vanuit header.html) */
 header {
-  background-color: #121a1dad;
+  background-color: #1e2928b9;
   color: white;
   padding: 20px;
   text-align: center;
@@ -92,7 +92,7 @@ nav a:hover {
 
 /* Footer stijl (komt vanuit footer.html) */
 footer {
-  background-color: #121a1dad;
+  background-color: #1e2928b9;
   color: #ffffff;
   text-align: center;
   padding: 15px;
@@ -109,11 +109,11 @@ footer {
     width: 100%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #0000001f;
+    background-color: #475a594e;
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: rgba(255, 255, 255, 0.461) 0px 0px 20px 5px;
+    box-shadow: #475a594e 0px 0px 20px 15px;
   }
 
   #grid {
