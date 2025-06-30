@@ -1,0 +1,152 @@
+/* Algemeen */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #ffffff;
+
+  display: flex;             
+  align-items: center;
+  justify-content: center; 
+  align-items: stretch;
+
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  flex-direction: column;
+}
+
+/* Inhoud opmaak */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+/* Geen scrollbalken */
+/* Voor Chrome, Safari en Edge */
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+}
+
+/* Voor Firefox */
+body {
+  scrollbar-width: none; 
+}
+
+/* Voor Internet Explorer 10+ */
+body {
+  -ms-overflow-style: none; 
+}
+
+
+/* Wrapper header (komt vanuit header.html) */
+header {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer stijl (komt vanuit footer.html) */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.9em;
+  width: 100%;
+
+}
+
+/* Index pagina */
+
+/* Wordle */  
+  #grid {
+    margin: auto; 
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .tile {
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #111;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .correct { background-color: #6aaa64; border-color: #6aaa64; } /* groen */
+  .present { background-color: #c9b458; border-color: #c9b458; } /* geel */
+  .absent { background-color: #a53d3d; border-color: #a53d3d; }  /* rood */
+  
+  #input-row {
+    display: flex;
+    justify-content: center;
+  }
+  #letter-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    letter-spacing: 10px;
+    background-color: #222;
+    color: white;
+  }
+  #message {
+    height: 1.5rem;
+    margin-top: 10px;
+    color: #f08;
+    font-weight: bold;
+  }
