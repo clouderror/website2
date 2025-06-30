@@ -47,6 +47,12 @@ p {
   color: #ffffff;
 }
 
+d {
+  text-align: center;
+  font-size: 1.2em;
+  color: #ffffff00;
+}
+
 /* Wrapper header (komt vanuit header.html) */
 header {
   background-color: #121a1dad;
@@ -102,10 +108,11 @@ footer {
     width: 100%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #00000050;
+    background-color: #0000001f;
     text-align: center;
     align-items: center;
     justify-content: center;
+    box-shadow: rgba(255, 255, 255, 0.461) 0px 0px 20px 5px;
   }
 
   #grid {
@@ -158,3 +165,158 @@ footer {
     color: #f08;
     font-weight: bold;
   }
+
+  /* Recepten */
+.search-bar {
+  margin: 1.5em auto;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+}
+
+.search-bar input {
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  width: 100%;
+  background-color: #00000050;
+  border: #00000050;
+  border-radius: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: #ffffff;
+  font-style: italic;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 4px 12px #405c5f;
+}
+
+.btn-container {  
+  text-align: center;
+  margin: 2em 0;
+}
+
+#randomBtn {
+  background-color: #496c70;
+  color: #ffffff;
+  border: none;
+  padding: 0.75em 2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #405c5f;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#randomBtn:hover {
+  background-color: #b1b2a4;
+  box-shadow: 0 7px 20px #9c9c91;
+}
+
+#randomBtn:active {
+  background-color: #b1b2a4;
+  box-shadow: 0 7px 20px #9c9c91;
+  transform: translateY(2px);
+}
+
+.recipe.highlighted {
+  box-shadow: 0 0 25px 12px #ffffff;
+  animation: pulseGlow 2s ease-in-out infinite;
+  z-index: 10;
+  position: relative;
+}
+
+.recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding-left: 4em; 
+  padding-right: 4vw;
+}
+
+.recipe {
+  flex: 1 1 calc(25% - 1em);
+  max-width: calc(25% - 1em);
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+.recipe:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 5px 25px #ffffff
+}
+.recipe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+}
+.recipe h2 {
+  padding: 0.5em;
+  font-size: 1.1em;
+  color: #333;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Nasa photo of the day */
+.divver.nasa-apod {
+  max-width: 350px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.divver.nasa-apod h3 {
+  margin-bottom: 0.5rem;
+}
+
+.divver.nasa-apod img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin-bottom: 0.7rem;
+}
+
+.divver.nasa-apod button {
+  margin-top: 0.7rem;
+  padding: 0.4rem 0.8rem;
+  background: #496c70;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.divver.nasa-apod button:hover {
+  background: #b0aa85;
+}
+
+.divver.nasa-apod p {
+  display: none;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  text-align: left;
+}

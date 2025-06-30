@@ -1,8 +1,8 @@
 (() => {
   let allowedGuesses = [];
-  let solutionWords = ["STARS", "ROVER", "ALIEN", "ORBIT", "MOONS"]; // Woorden voor woord van de dag
+  let solutionWords = ["STARS", "ALIEN", "ORBIT", "MOONS"]; // Woorden voor woord van de dag
 
-  const startDate = new Date(2025, 5, 30);
+  const startDate = new Date(2025, 7, 1);
 
   function getWordOfTheDay() {
     const now = new Date();

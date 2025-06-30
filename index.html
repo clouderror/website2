@@ -12,8 +12,51 @@
 
     <div id="header-container"></div>
 
-    <h1>Ons Universum</h1>
-    <p>Welkom op Micha's website!</p>
+    <h1><d>m</d>Ons Universum</h1>
+
+    
+<div id="divver">
+  <h2>De NASA foto van vandaag</h2>
+<div class="divver nasa-apod">
+  <h3 id="apod-title"></h3>
+  <img id="apod-image" alt="NASA Astronomy Picture of the Day" />
+  <button id="toggle-explanation">Toon info</button>
+  <p id="apod-explanation"></p>
+</div>
+</div>
+
+<script>
+  const apiKey = "eQjTZtuoDjJpw3h2AONTlEXH1w7zFIevDYPlJJyS";  
+
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('apod-title').textContent = data.title;
+      const img = document.getElementById('apod-image');
+      img.src = data.url;
+      img.alt = data.title;
+      document.getElementById('apod-explanation').textContent = data.explanation;
+      document.getElementById('apod-explanation').style.display = 'none';
+    })
+    .catch(err => {
+      const container = document.querySelector('.divver.nasa-apod');
+      container.textContent = "Kan NASA foto van de dag niet laden.";
+      console.error(err);
+    });
+
+  const btn = document.getElementById('toggle-explanation');
+  const explanation = document.getElementById('apod-explanation');
+  btn.addEventListener('click', () => {
+    if (explanation.style.display === 'none' || explanation.style.display === '') {
+      explanation.style.display = 'block';
+      btn.textContent = 'Verberg uitleg';
+    } else {
+      explanation.style.display = 'none';
+      btn.textContent = 'Toon uitleg';
+    }
+  });
+</script>
+
 
     <div id="divver">
         <h2>Speel de Wordle van vandaag!</h2>
