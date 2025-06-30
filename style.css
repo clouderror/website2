@@ -86,7 +86,8 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #709e9e;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Footer stijl (komt vanuit footer.html) */
