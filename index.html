@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ons Universum | Home</title>
-    <link rel="icon" href="logo.ico" />
+    <link rel="icon" href="images/logo.ico" />
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,8 +15,59 @@
     <h1>Ons Universum</h1>
     <p>Welkom op Micha's website!</p>
 
+    <div id="divver">
+        <h2>Speel de Wordle van vandaag!</h2>
+        <div id="grid" aria-label="Wordle grid" role="grid">
+        <!-- 30 tiles -->
+        <div class="tile" data-row="0" data-col="0"></div>
+        <div class="tile" data-row="0" data-col="1"></div>
+        <div class="tile" data-row="0" data-col="2"></div>
+        <div class="tile" data-row="0" data-col="3"></div>
+        <div class="tile" data-row="0" data-col="4"></div>
+        
+        <div class="tile" data-row="1" data-col="0"></div>
+        <div class="tile" data-row="1" data-col="1"></div>
+        <div class="tile" data-row="1" data-col="2"></div>
+        <div class="tile" data-row="1" data-col="3"></div>
+        <div class="tile" data-row="1" data-col="4"></div>
+        
+        <div class="tile" data-row="2" data-col="0"></div>
+        <div class="tile" data-row="2" data-col="1"></div>
+        <div class="tile" data-row="2" data-col="2"></div>
+        <div class="tile" data-row="2" data-col="3"></div>
+        <div class="tile" data-row="2" data-col="4"></div>
+        
+        <div class="tile" data-row="3" data-col="0"></div>
+        <div class="tile" data-row="3" data-col="1"></div>
+        <div class="tile" data-row="3" data-col="2"></div>
+        <div class="tile" data-row="3" data-col="3"></div>
+        <div class="tile" data-row="3" data-col="4"></div>
+        
+        <div class="tile" data-row="4" data-col="0"></div>
+        <div class="tile" data-row="4" data-col="1"></div>
+        <div class="tile" data-row="4" data-col="2"></div>
+        <div class="tile" data-row="4" data-col="3"></div>
+        <div class="tile" data-row="4" data-col="4"></div>
+        
+        <div class="tile" data-row="5" data-col="0"></div>
+        <div class="tile" data-row="5" data-col="1"></div>
+        <div class="tile" data-row="5" data-col="2"></div>
+        <div class="tile" data-row="5" data-col="3"></div>
+        <div class="tile" data-row="5" data-col="4"></div>
+        </div>
+
+        <div id="input-row">
+        <input type="text" id="letter-input" maxlength="5" autofocus autocomplete="off" spellcheck="false" aria-label="Typ je woord" />
+        </div>
+
+        <div id="message" role="alert" aria-live="polite"></div>
+    </div>    
+
+    <script src="wordle.js"></script>
+    <script src="layout.js"></script>
+
     <div id="footer-container"></div>
 
-    <script src="layout.js"></script>
+    
 </body>
 </html>
