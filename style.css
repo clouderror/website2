@@ -400,8 +400,8 @@ footer {
   }
 
   .recipe {
-    flex: 1 1 calc(50% - 1em);
-    max-width: calc(50% - 1em);
+    flex: 1 1 calc(33.333% - 1em);
+    max-width: calc(33.333% - 1em);
   }
 
   .divver.nasa-apod {
