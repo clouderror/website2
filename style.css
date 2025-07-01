@@ -320,3 +320,72 @@ footer {
   line-height: 1.3;
   text-align: left;
 }
+
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    allign-items: center;
+    justify-content: center;
+}
+  
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  #grid {
+    grid-template-columns: repeat(5, 45px);
+    grid-template-rows: repeat(6, 45px);
+    gap: 6px;
+  }
+
+  .tile {
+    font-size: 1.5rem;
+  }
+
+  #letter-input {
+    width: 240px;
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    padding: 8px;
+  }
+
+  .search-bar input {
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+
+  .recipes-list {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .recipe {
+    flex: 1 1 calc(50% - 1em);
+    max-width: calc(50% - 1em);
+  }
+
+  .divver.nasa-apod {
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+
+  .divver.nasa-apod p {
+    font-size: 0.8rem;
+  }
+
+}
