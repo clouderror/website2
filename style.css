@@ -374,11 +374,10 @@ footer {
   }
 
   h2 {
-    text-align: left;
-    white-space: nowrap;        
-    overflow: hidden;           
-    text-overflow: ellipsis;   
-    max-width: 90%;           
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
   }
 
   
