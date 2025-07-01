@@ -156,12 +156,6 @@
   </main>
 
 <script>
-  fetch('layout.js')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-container').innerHTML = data;
-    });
-
   const recipes = [
     { title: 'Pasta pesto', img: 'images/recepten/pastapesto.avif', link: 'https://www.ah.nl/allerhande/recept/R-R1199964/pasta-pesto-met-kip' },
     { title: 'Kipburger', img: 'images/recepten/kipburger.avif', link: 'https://www.ah.nl/allerhande/recept/R-R1194006/broodje-kipburger-met-sla-tomaat-en-caesardressing' },
