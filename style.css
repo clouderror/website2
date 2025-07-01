@@ -105,7 +105,7 @@ footer {
 /* Index pagina */
 
 /* Wordle */  
-#divver {
+.divver {
     width: 100%;
     margin: 20px auto;
     padding: 20px;
@@ -300,45 +300,43 @@ footer {
 }
 
 /* Nasa photo of the day */
-.divver.nasa-apod {
+.divvernasaapod {
   max-width: 200%;
   margin: 2rem auto;
   padding: 1rem;
-  color: white;
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.divver.nasa-apod h3 {
+.divvernasaapod h3 {
   margin-bottom: 0.5rem;
 }
 
-.divver.nasa-apod img {
+.divvernasaapod img {
   display: block;
   margin: 0 auto; 
   width: 40%;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   margin-bottom: 0.7rem;
 }
 
-.divver.nasa-apod button {
+.divvernasaapod button {
   margin-top: 0.7rem;
   padding: 0.4rem 0.8rem;
-  background: #496c70;
+  background: #04040460;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
-  color: white;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.divver.nasa-apod button:hover {
+.divvernasaapod button:hover {
   background: #b0aa85;
 }
 
-.divver.nasa-apod p {
+.divvernasaapod p {
   display: none;
   margin-top: 0.7rem;
   font-size: 0.85rem;
@@ -352,30 +350,34 @@ footer {
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 100%;
     overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-  
-  h1 {
-    font-size: 2em;
-    margin-top: 20px;
+    justify-content: flex-start;
+    min-height: 100vh;
   }
 
-  h2 {
-    font-size: 1.2em;
-    margin-top: 15px;
+  #header-container, #footer-container {
+    width: 100vw;
+    box-sizing: border-box;
   }
 
-  p {
-    font-size: 1em;
+  h1, h2, p {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   #grid {
+    display: grid;
     grid-template-columns: repeat(5, 45px);
     grid-template-rows: repeat(6, 45px);
     gap: 6px;
+    justify-content: center;
   }
 
   .tile {
@@ -383,38 +385,37 @@ footer {
   }
 
   #letter-input {
-    width: 240px;
-    font-size: 1.2rem;
+    width: 170px;
+    font-size: 1rem;
     letter-spacing: 8px;
     padding: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  #letter-input::placeholder {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  #submit-btn {
+    flex: 0 0 auto;
+    margin-left: 1px;
   }
 
-  .search-bar input {
-    font-size: 1em;
-    padding: 0.5em 1em;
-  }
-
-  .recipes-list {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .recipe {
-    flex: 1 1 calc(33.333% - 1em);
-    max-width: calc(33.333% - 1em);
-  }
-
-  .divver.nasa-apod {
-    max-width: 250%;
+  .divvernasaapod {
+    max-width: 90vw;
     padding: 0.8rem;
+    text-align: center;
   }
 
-  .divver.nasa-apod p {
-    font-size: 2rem;
-  }
-
-  .divver.nasa-apod img {
+  .divvernasaapod img {
     width: 80%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
   }
 
+  .divvernasaapod p {
+    font-size: 1.2rem;
+  }
 }
