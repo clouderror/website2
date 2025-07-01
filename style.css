@@ -109,11 +109,10 @@ footer {
     width: 100%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #475a594e;
+    background-color: #41444424;
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: #475a594e 0px 0px 20px 15px;
   }
 
   #grid {
@@ -148,7 +147,7 @@ footer {
     justify-content: center;
   }
   #letter-input {
-    width: 310px;
+    width: 250px;
     padding: 10px;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -160,12 +159,36 @@ footer {
     color: white;
     box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.3);
   }
+  #letter-input::placeholder {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5); 
+  }
   #message {
     height: 1.5rem;
     margin-top: 10px;
     color: #f08;
     font-weight: bold;
   }
+  #submit-btn {
+  margin-left: 10px;
+  padding: 0px 15px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: #496c70;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease;
+  font-family: monospace;
+}
+
+#submit-btn:hover {
+  background-color: #b0aa85;
+}
+
 
   /* Recepten */
 .search-bar {
