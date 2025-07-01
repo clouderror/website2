@@ -167,7 +167,7 @@ footer {
   #message {
     height: 1.5rem;
     margin-top: 10px;
-    color: #f08;
+    color: rgb(255, 255, 255);
     font-weight: bold;
   }
   #submit-btn {
@@ -366,10 +366,17 @@ footer {
     box-sizing: border-box;
   }
 
-  h1, h2, p {
+  h1, p {
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 10px;
   }
 
   

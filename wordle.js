@@ -1,5 +1,4 @@
 (() => {
-  let allowedGuesses = [];
 let solutionWords = [
   // Januari 1-31
   "VODKA", "ALIEN", "SHOTS", "GUARD", "ASTRO", "CLAIM", "KYDDE", "JUDGE", "TRIPS", "COURT",
@@ -134,15 +133,15 @@ let solutionWords = [
     const guessLower = guess.toLowerCase();
     const wordLower = getWordOfTheDay().toLowerCase();
 
-    if (!allowedGuesses.includes(guessLower) && guessLower !== wordLower) {
-      showMessage("Woord niet in lijst.");
-      return false;
-    }
+  if (guess.length !== 5) {
+    showMessage("Woord moet 5 letters hebben.");
+    return false;
+  }
 
     colorTiles(guess, currentRow);
 
     if (guessLower === wordLower) {
-      showMessage("Gewonnen! 🎉");
+      showMessage("Gewonnen! ");
       input.disabled = true;
       button.disabled = true;
       return true;
