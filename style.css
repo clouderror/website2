@@ -349,7 +349,7 @@ footer {
   html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
   }
 
@@ -359,10 +359,11 @@ footer {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    max-width: 100%;
   }
 
   #header-container, #footer-container {
-    width: 100vw;
+    width: 200vw;
     box-sizing: border-box;
   }
 
@@ -384,6 +385,12 @@ footer {
     font-size: 1.5rem;
   }
 
+  #input-row {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+  }
+
   #letter-input {
     width: 170px;
     font-size: 1rem;
@@ -397,12 +404,13 @@ footer {
     letter-spacing: 2px;
   }
   #submit-btn {
+    max-width: 100%;
     flex: 0 0 auto;
     margin-left: 1px;
   }
 
   .divvernasaapod {
-    max-width: 90vw;
+    max-width: 200vw;
     padding: 0.8rem;
     text-align: center;
   }
